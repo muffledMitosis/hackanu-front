@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1 className="mx-8 my-8">Dashboard</h1>
+      <h1 className="mx-8 my-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">Dashboard</h1>
 
       <div className="flex justify-center gap-24">
         <div className="w-1/4">
