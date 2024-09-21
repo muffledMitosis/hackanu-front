@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex justify-center">
         <div className="w-1/4">
           <h2>Advanced report</h2>
-          <p>loremText</p>
+          <p>{loremText}</p>
         </div>
 
         <div>
