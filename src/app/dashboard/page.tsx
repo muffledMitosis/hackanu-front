@@ -1,3 +1,4 @@
+import HealthSafetyMeter from "@/components/HealthSafetyMeter";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,13 +9,14 @@ export default function Home() {
     <div>
       <h1 className="mx-8 my-8">Dashboard</h1>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center gap-24">
         <div className="w-1/4">
-          <h2>Summary of risks</h2>
+          <h2 className="">Summary of risks</h2>
           <p className="">{loremText}</p>
         </div>
         <div>
           <h2>Health safety meter</h2>
+          <HealthSafetyMeter value={100}/>
         </div>
       </div>
 
@@ -23,7 +25,7 @@ export default function Home() {
         <p>Environment Visual</p>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-24">
         <div className="w-1/4">
           <h2>Advanced report</h2>
           <p>{loremText}</p>
