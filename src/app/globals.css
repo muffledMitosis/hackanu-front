@@ -38,7 +38,8 @@ body {
     --primary-foreground: 60 9.1% 97.8%;
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
+    /* --muted: 60 4.8% 95.9%; */
+    --muted: 12 6.5% 15.1%;
     --muted-foreground: 25 5.3% 44.7%;
     --accent: 60 4.8% 95.9%;
     --accent-foreground: 24 9.8% 10%;
@@ -97,5 +98,17 @@ body {
   }
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+  tr {
+    @apply m-0 border-t p-0 even:bg-muted;
+  }
+  th {
+    @apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right;
+  }
+  td {
+    @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+  }
+  ul {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2;
   }
 }

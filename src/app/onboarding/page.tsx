@@ -22,7 +22,9 @@ export default function Home() {
 
   return (
     <GlowCapture className="w-full h-screen">
-      <h1 className="mx-8 my-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">Welcome, Meth</h1>
+      <div className="flex justify-center my-4 mb-8">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">Welcome, Meth</h1>
+      </div>
 
       <div className="flex flex-row gap-16 mx-12">
         <SiteButton imgPath={site1}/>
